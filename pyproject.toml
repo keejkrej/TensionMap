@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tensionmap"
+version = "0.1.0"
+description = "TensionMap analysis tools including VMSI"
+authors = [{name = "Original Authors", email = ""}]
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-image",
+    "matplotlib",
+    "pandas",
+    "scikit-learn",
+    "cellpose",
+]
+
+[tool.setuptools]
+packages = {find = {where = ["src"]}}
+
+[project.optional-dependencies]
+# Add optional deps if needed
+
+[project.scripts]
+# Example script entry points (optional)
